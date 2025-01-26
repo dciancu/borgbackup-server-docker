@@ -1,7 +1,7 @@
 services:
   borgbackup-server:
     container_name: borgbackup-server
-    image: dciancu/borgbackup-server-docker
+    image: dciancu/borgbackup-server
     init: true
     read_only: true
     restart: unless-stopped
