@@ -12,6 +12,8 @@ Run `gen-ssh-host-keys.sh` script before starting container.
 Make sure to put the authorized ssh key in `data/ssh/key.pub`.  
 Run the container using `docker compose` with the provided `docker-compose.yml`.
 
+On remote host use repository `ssh://borgbackup@1.2.3.4:2222/backup`.
+
 ## License
 
 This project is open-source software licensed under the [Apache License, Version 2.0](https://opensource.org/license/apache-2-0).
