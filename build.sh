@@ -19,7 +19,7 @@ else
     image_tag="${image_name}:latest-${image_arch}"
 fi
 
-docker build -t "$image_tag" --pull .
+docker build -t "$image_tag" --pull --build-arg "UID=${UID:-}" --build-arg "GID=${GID:-}" .
 
 if [[ -n "${CIRCLE_BRANCH+x}" ]]; then
     echo "$DOCKER_PASS" | docker login -u "$DOCKER_USERNAME" --password-stdin
