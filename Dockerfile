@@ -2,8 +2,8 @@ FROM debian:12-slim
 
 SHELL ["/usr/bin/env", "bash", "-c"]
 
-ARG UID=50000
-ARG GID=50000
+ARG UID
+ARG GID
 ARG DEBIAN_FRONTEND='noninteractive'
 
 WORKDIR /root
