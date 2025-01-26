@@ -33,8 +33,7 @@ RUN --mount=target=/var/lib/apt/lists,type=cache --mount=target=/var/cache/apt,t
     && echo 'AllowUsers borgbackup' >> /etc/ssh/sshd_config \
     && rm /etc/ssh/ssh_host_* \
     && addgroup --gid "$GID" borgbackup \
-    && adduser --uid "$UID" --gid "$GID" --gecos '' --shell /bin/bash --disabled-password borgbackup \
-    && rm -r /home/borgbackup \
+    && adduser --uid "$UID" --gid "$GID" --gecos '' --shell /bin/bash --disabled-password --no-create-home borgbackup \
     && mkdir /home/borgbackup \
     && chown borgbackup:borgbackup /home/borgbackup \
     && chmod 700 /home/borgbackup
