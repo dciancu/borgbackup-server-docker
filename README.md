@@ -8,8 +8,8 @@ Run BorgBackup server in Docker.
 
 Docker Hub Image: [dciancu/borgbackup-server](https://hub.docker.com/r/dciancu/borgbackup-server)  
 
-Run `gen-ssh-host-keys.sh` script before starting container.
-Make sure to put the authorized ssh key in `data/ssh/key.pub`.
+Run `gen-ssh-host-keys.sh` script before starting container.  
+Make sure to put the authorized ssh key in `data/ssh/key.pub`.  
 Run the container using `docker compose` with the provided `docker-compose.yml`.
 
 ## License
