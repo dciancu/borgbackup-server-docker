@@ -1,0 +1,15 @@
+services:
+  borgbackup-server:
+    container_name: borgbackup-server
+    image: dciancu/borgbackup-server-docker
+    init: true
+    read_only: true
+    restart: unless-stopped
+    volumes:
+      - ./data/ssh:/ssh:ro
+      - ./data/backup:/backup
+    ports:
+      - "2222:2222/tcp"
+    tmpfs:
+      - /run
+      - /home/borgbackup/.ssh
