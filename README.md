@@ -1,5 +1,7 @@
 # BorgBackup Server Docker container
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/F8zvFL89rXf6pgQo3twuVc/UzLQdLgZfC4Mzd1je1xiS5/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/F8zvFL89rXf6pgQo3twuVc/UzLQdLgZfC4Mzd1je1xiS5/tree/main)
+
 <a href="https://www.buymeacoffee.com/dciancu" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 42px !important;width: 151.9px !important;" ></a>
 
 Run BorgBackup server in Docker.
